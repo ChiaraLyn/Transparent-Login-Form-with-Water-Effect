@@ -1,0 +1,149 @@
+
+@import url(form.css);
+/* Main Settings */
+
+html {
+ scroll-behavior: smooth;
+}
+.noselect {
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: -moz-none;
+}
+
+.water {
+ font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-image: url('../img/water.jpg');
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100%;
+}
+
+.main {
+ 	height: 100vh;
+}
+
+.cent {
+ 	display: flex;
+ 	justify-content: center;
+ 	text-align: center;
+ 	vertical-align: middle;
+}
+
+/* User PNG*/
+
+.user_div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#user {
+	align-self: center;
+	clip-path: circle(46% at 50% 50%);
+	box-shadow: inset -3px -3px 114px 23px #050b11a8;
+	object-fit: cover;
+}
+
+#user:hover {
+	cursor: pointer;
+	box-shadow: inset -3px -3px 100px 1px #FFFFFF;
+}
+
+/*scale-out-center*/
+
+.scale-out-center {
+ -webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale-out-center {
+ 0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+ }
+}
+
+@keyframes scale-out-center {
+ 0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+ }
+}
+
+/*---------------------*/
+
+/*scale in center*/
+
+.scale-in-center {
+ -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-center {
+ 0% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+ }
+}
+
+@keyframes scale-in-center {
+ 0% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+ }
+}
+/*-------------------------------Media Query------------------------------------*/
+
+@media screen and (min-width: 320px) {
+ #user {
+	width: 40%;
+ }
+}
+
+@media screen and (min-width: 425px) {
+ #user {
+	width: 35%;
+ }
+}
+
+@media screen and (min-width: 768px) {
+ #user {
+	width: 20%;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ #user {
+	width: 15%;
+ }
+}
