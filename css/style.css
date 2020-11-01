@@ -37,10 +37,10 @@ html {
 /* User PNG*/
 
 .user_div {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #user {
